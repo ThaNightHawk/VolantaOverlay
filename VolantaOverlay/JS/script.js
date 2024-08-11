@@ -138,8 +138,6 @@ const updatePositionData = (data) => {
 
         const trackerBar = document.getElementById("TrackerBar");
 
-        // If the plane is on the ground at the departure airport and hasn't moved, set the progress bar to 0%
-        // Otherwise, set the progress bar to the percentage of the distance traveled
         if (onGround && distanceTraveled < 1) {
             trackerBar.style.setProperty('width', '0%', 'important');
         } else {
@@ -151,7 +149,6 @@ const updatePositionData = (data) => {
             return;
         }
 
-        // Example usage:
         const currentPosition = {
             latitude: latitude,
             longitude: longitude,
