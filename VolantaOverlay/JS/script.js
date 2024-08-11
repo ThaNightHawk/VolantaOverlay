@@ -103,10 +103,17 @@ const updateFlightInfo = (data) => {
 };
 
 const resetFlightInfo = () => {
-    document.getElementById("DEP").innerHTML = "N/A";
-    document.getElementById("ARR").innerHTML = "N/A";
-    document.getElementById("NW").innerHTML = "N/A";
-    document.getElementById("ATC").innerHTML = "N/A";
+    flightData.dep = "N/A";
+    flightData.arr = "N/A";
+    flightData.nw = "N/A";
+    flightData.atc = "N/A";
+    flightData.originCoords = undefined;
+    flightData.destinationCoords = undefined;
+
+    document.getElementById("DEP").innerHTML = flightData.dep;
+    document.getElementById("ARR").innerHTML = flightData.arr;
+    document.getElementById("NW").innerHTML = flightData.nw;
+    document.getElementById("ATC").innerHTML = flightData.atc;
     document.getElementById("ETA").innerHTML = "No ETA";
 };
 
@@ -130,17 +137,39 @@ const updatePositionData = (data) => {
         const progressPercentage = distanceTraveled / totalDistance;
 
         const trackerBar = document.getElementById("TrackerBar");
-        trackerBar.style.setProperty('width', onGround ? '100%' : `${(progressPercentage * 100).toFixed(2)}%`, 'important');
+
+        // If the plane is on the ground at the departure airport and hasn't moved, set the progress bar to 0%
+        // Otherwise, set the progress bar to the percentage of the distance traveled
+        if (onGround && distanceTraveled < 1) {
+            trackerBar.style.setProperty('width', '0%', 'important');
+        } else {
+            trackerBar.style.setProperty('width', onGround ? '100%' : `${(progressPercentage * 100).toFixed(2)}%`, 'important');
+        }
 
         if (onGround) {
             document.getElementById("ETA").innerHTML = "00:00z";
             return;
         }
 
-        const eta = calculateETA({ latitude, longitude, groundSpeed }, { destination: flightData.destinationCoords });
+        // Example usage:
+        const currentPosition = {
+            latitude: latitude,
+            longitude: longitude,
+            groundSpeed: groundSpeed
+        };
+    
+        const flight = {
+            destination: {
+                latitude: flightData.destinationCoords[0],
+                longitude: flightData.destinationCoords[1]
+            }
+        };
+    
+        eta = calculateETA(currentPosition, flight);
         document.getElementById("ETA").innerHTML = eta;
     }
 };
+
 
 const handleData = (data) => {
     if (data.seq_id <= seqId) return;
