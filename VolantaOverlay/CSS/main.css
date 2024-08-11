@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-main: #1cc2ff;
+    --color-depart: #d65353;
+    --color-arrival: #7cd37c;
+    --color-distancebar: #d65353;
+    --color-bgDistanceBar: #363636ec;
+    --color-bgMiddle: #1818186e;
+    --color-infoText: #ffffff;
+    --color-bg: #000000ec;
+
+    --spacing-3xl: 2rem;
+
+    text-rendering: geometricPrecision;
+    font-family: "Poppins", sans-serif;
+}
+
+p, span {
+    color: var(--color-infoText);
+}
+
+* {
+    transition: all .5s linear;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    overflow: hidden;
+}
+
+header > div {
+    flex: 2;
+    background-color: var(--color-bg);
+}
+
+header > div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    z-index: 3;
+    position: relative;
+    justify-content: center;
+}
+
+header > div:nth-child(2):before {
+    --offset: 30px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(var(--offset) * -1);
+    height: 100%;
+    width: calc(100% + calc(var(--offset) * 2));
+    transform: skew(-40deg);
+    background-color: var(--color-bgMiddle);
+    z-index: -1;
+}
+
+img {
+    margin: 0 1rem;
+    filter: brightness(0) saturate(100%);
+}
+
+p {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+span:first-child {
+    font-size: 1.15rem;
+    font-weight: 900;
+}
+
+div {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ol {
+    max-height: 50px;
+    margin: 0px;
+    gap: 85px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: flex;
+}
+
+li p {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+div.progress-bar > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.container > .header {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.TopDiv {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.1fr 2fr;
+    width: 100vw;
+    height: 100vh;
+    justify-items: end;
+}
+
+.GridDiv {
+    grid-area: 1 / 1 / 2 / 4;
+    display:flex;
+    flex-direction: column;
+}
+
+.HeaderDiv {
+    display:flex;
+    justify-content: center;
+}
+
+.AirportsStatic {
+    color:var(--color-main);
+}
+
+.StaticInfo {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.DynamicInfo {
+    color:white;
+}
+
+.NoFlight {
+    color:var(--color-infoText);
+    position:absolute;
+    text-transform: uppercase;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity:0;
+}
+
+.Arrival {
+    color:var(--color-arrival);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    transition: all .5s linear;
+}
+.Depart {
+    color:var(--color-depart);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    transition: all .5s linear;
+}
+
+.TrackerMain {
+    display: flex;
+    --margin: 1rem;
+    width: 100%;
+    height: 11px;
+    border-radius: 6px;
+    background-color: var(--color-bgDistanceBar);
+    margin: 0 1rem;
+    width: calc(100vw - calc(var(--margin) * 2));
+    overflow: hidden;
+}
+
+.TrackerMain > div {
+    transition: all .5s linear;
+    width: 0%;
+    height: 100%;
+    background-color: var(--color-distancebar);
+    border-radius: 6px;
+}
+
+.CurrentFlight {
+    margin:0px 1rem;
+    filter:unset;
+}

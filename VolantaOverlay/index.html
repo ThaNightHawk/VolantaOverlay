@@ -1,0 +1,80 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Volanta - No Premium</title>
+
+		<link rel="stylesheet" href="./CSS/main.css">
+		<script src="./JS/distance.js"></script>
+		<script src="./JS/script.js"></script>
+	</head>
+	<body>
+		<div id="root">
+			<div class="TopDiv">
+				<div class="GridDiv">
+					<header>
+						<div class="HeaderDiv">
+							<div class="HeaderDiv">
+								<ol>
+									<li style="display:flex;">
+										<p class="StaticInfo">SPD:</p>
+										<p><span id="SPD">0</span><span>kts</span></p>
+									</li>
+									<li>
+										<p class="StaticInfo">VSPD:</p>
+										<p><span id="VSPD">0</span><span>fpm</span></p>
+									</li>
+									<li>
+										<p class="StaticInfo">HDG:</p>
+										<p><span id="HDG">0</span><span>°</span></p>
+									</li>
+									<li>
+										<p class="StaticInfo">ALT:</p>
+										<p><span id="ALT">0</span><span>ft</span></p>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div>
+							<div class="CurrentFlight">
+								<p class="AirportsStatic">DEP</p>
+								<p id="DEP" class="Depart">NONE</p>
+							</div>
+							<img src="./Images/plane.svg" color="#ffffff" class="CurrentFlight">
+							<div class="CurrentFlight">
+								<p id="ARR" class="Arrival">NONE</p>
+								<p class="AirportsStatic">ARR</p>
+							</div>
+							<div class="NoFlight">NO FLIGHTPLAN FILED</div>
+						</div>
+						<div class="HeaderDiv">
+							<div class="HeaderDiv">
+								<ol>
+									<li>
+										<p class="StaticInfo">ATC:</p>
+										<p id="ATC" class="DynamicInfo">N/A</p>
+									</li>
+									<li>
+										<p class="StaticInfo">NW:</p>
+										<p id="NW" class="DynamicInfo">N/A</p>
+									</li>
+									<li>
+										<p class="StaticInfo">PHASE:</p>
+										<p id="PHASE" class="DynamicInfo">N/A</p>
+									</li>
+									<li>
+										<p class="StaticInfo">ETA:</p>
+										<p id="ETA" class="DynamicInfo">00:00z</p>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</header>
+					<div class="TrackerMain">
+						<div color="#ffffff" class="Tracker" id="TrackerBar"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

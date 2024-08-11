@@ -1,0 +1,147 @@
+{
+  "data": {
+    "configurables": {
+      "theme": "custom",
+      "customThemeColors": {
+        "secondary": {
+          "background": "#2e7e99",
+          "headers": "#636363",
+          "data": "#ffffff"
+        },
+        "primary": {
+          "background": "#18c3fe",
+          "headers": "#000000",
+          "data": "#ffffff"
+        }
+      }
+    },
+    "flight": {
+      "id": "1d527835-988c-4638-a55e-941723c1a44e",
+      "userId": "bfd7e147-e48a-4ac4-d8a6-08dc59b6d9dc",
+      "plan": {
+        "generatedBy": "SimBrief",
+        "briefingUrl": "https://www.simbrief.com/ofp/flightplans/EKCHGCLP_PDF_1723315984.pdf",
+        "briefingHtmlZipUrl": "https://cdn.volanta.app/ofps/simbrief/zip/bfd7e147-e48a-4ac4-d8a6-08dc59b6d9dc/107854435-c6502897-5bdd-469c-9eac-b6a1f23504d4.html.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=volanta-db-sa%40volanta.iam.gserviceaccount.com%2F20240810%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240810T204108Z&X-Goog-Expires=300&X-Goog-SignedHeaders=host&X-Goog-Signature=cda0d8746a5a174fa298849db7c7b121d05202e01f43c740c95a17f43262b5621eba4cb075b377b35332dc31ca97708c35526bdc6c132c6d54a7a3b569da84477a8ed9ff55e1dc391f3de4026dece20f2d3534529df9473b6ab5bae9732c1bf479a8c5ee0bbbea591875bdbd740531373eeec8a853d48d31292959c854146eec2e5450611cdfa90f0c1552b2d1087523151fdc1c486bc89958a5415d4ef6faba2adbfbf952dbf80216207c02026e7cf329181dd7221210cd2f17a6f000773c7e5dff2428755562fff97a7280374de44cfa96ddf042c6e6f6a7dac42036dbb287fdbf4f6a2ec32022ccbcae5f601d7c93343e3783c345a2113f129bfecf0694fb"
+      },
+      "callsign": "HWK008",
+      "flightNumber": null,
+      "origin": {
+        "id": "da4f3ca4-c89f-4399-af14-0b81b49b4321",
+        "name": "Copenhagen Kastrup Airport",
+        "icaoCode": "EKCH",
+        "iataCode": "CPH",
+        "latitude": 55.617900848389,
+        "longitude": 12.656000137329,
+        "isClosed": false,
+        "timezone": "Europe/Copenhagen"
+      },
+      "originId": "da4f3ca4-c89f-4399-af14-0b81b49b4321",
+      "originIcao": "EKCH",
+      "destination": {
+        "id": "ac3d5e23-ab09-4092-96a8-0a389b160e57",
+        "name": "Gran Canaria Airport",
+        "icaoCode": "GCLP",
+        "iataCode": "LPA",
+        "latitude": 27.931900024414062,
+        "longitude": -15.38659954071045,
+        "isClosed": false,
+        "timezone": "Atlantic/Canary"
+      },
+      "destinationId": "ac3d5e23-ab09-4092-96a8-0a389b160e57",
+      "destinationIcao": "GCLP",
+      "alternate": {
+        "id": "9160a57c-3098-4f18-854d-398b9e896ef6",
+        "name": "Fuerteventura Airport",
+        "icaoCode": "GCFV",
+        "iataCode": "FUE",
+        "latitude": 28.452699661254883,
+        "longitude": -13.863800048828125,
+        "isClosed": false,
+        "timezone": "Atlantic/Canary",
+        "country": null,
+        "weight": null,
+        "metar": null
+      },
+      "alternateId": "9160a57c-3098-4f18-854d-398b9e896ef6",
+      "alternateIcao": "GCFV",
+      "hasDiverted": false,
+      "atcRoute": "LANG2C LANGO DCT ELPAT DCT CIV N872 MEDIL DCT ATLEN DCT ABUPI DCT BEXAL DCT SAMAR SAMA5C",
+      "aircraftTitle": "Fenix A320 - Hawk Airlines (2024)",
+      "aircraftRegistration": "OY-HWK",
+      "aircraftDirectory": "",
+      "aircraftIcao": "A320",
+      "aircraftId": "59f85afa-80d9-4dfa-b650-a99170721edd",
+      "aircraft": {
+        "id": "59f85afa-80d9-4dfa-b650-a99170721edd",
+        "registration": "OY-HWK",
+        "aircraftTypeIcao": "A320",
+        "imageUrl": "https://cdn.volanta.app/aircraft/59f85afa-80d9-4dfa-b650-a99170721edd/35f605c7-153d-4280-b841-78072948be98-20240729183157-1280x720.jpg",
+        "images": [
+          {
+            "id": "497708c7-3ec3-46c3-8973-3f2abd5b32d5",
+            "url": "https://cdn.volanta.app/aircraft/59f85afa-80d9-4dfa-b650-a99170721edd/35f605c7-153d-4280-b841-78072948be98-20240729183157-1280x720.jpg",
+            "orderIndex": 0
+          }
+        ]
+      },
+      "events": [],
+      "positions": [],
+      "network": "Volanta",
+      "networkUserId": null,
+      "isPremium": true,
+      "state": "Active",
+      "offBlocksTime": null,
+      "onBlocksTime": null,
+      "realBlockTime": null,
+      "effectiveBlockTime": null,
+      "realFlightTime": null,
+      "effectiveFlightTime": null,
+      "fuelBurn": null,
+      "plannedFuelBurn": null,
+      "plannedBlockTime": 21000,
+      "plannedBlockFuel": 16189,
+      "plannedFlightTime": 18783,
+      "plannedPax": 180,
+      "plannedCargo": 0,
+      "plannedPayload": 13512,
+      "plannedAltitude": 34000,
+      "plannedCostIndex": 5,
+      "plannedZFW": 57541,
+      "plannedTOW": 73500,
+      "plannedDistance": 2089,
+      "plannedOriginRunway": "22R",
+      "plannedDestinationRunway": "03L",
+      "units": "kgs",
+      "distanceFlownInNauticalMiles": null,
+      "importedFlightId": null,
+      "networkUserName": null,
+      "note": null,
+      "savedFlightFiles": [],
+      "simAbbreviation": "msfs",
+      "partyMembers": [],
+      "scheduleId": null,
+      "schedule": null,
+      "rosterIndex": null,
+      "tags": [],
+      "updatedAt": "2024-08-10T20:47:07.8631953Z",
+      "deletedAt": null,
+      "landingRate": null
+    },
+    "richStatus": {
+      "state": "CruisingOverCountry",
+      "value": "Netherlands",
+      "taxiing": false,
+      "gateName": false,
+      "oceanName": "",
+      "countryName": "Netherlands",
+      "altitude": 0,
+      "sidIdentifier": "",
+      "climbing": false,
+      "starIdentifier": "",
+      "online": false
+    }
+  },
+  "name": "SET_OVERLAY_STATE",
+  "type": "MESSAGE",
+  "seq_id": 97968
+}

@@ -1,0 +1,28 @@
+{
+    "name": "POSITION_UPDATE",
+    "data": {
+        "altitudeAgl": 34737.284432873865,
+        "altitudeAmsl": 34827.78090470451,
+        "autopilotEngaged": false,
+        "bank": 0.025184631905763255,
+        "enginesRunning": true,
+        "fps": 0,
+        "fuelKg": 11235.401450407286,
+        "gravity": 0.9968295773487365,
+        "groundSpeed": 395.6940971679188,
+        "headingTrue": 229.94943154902987,
+        "inReplayMode": false,
+        "latitude": 52.077068706222384,
+        "longitude": 6.631643614037859,
+        "onGround": false,
+        "parkingBrake": false,
+        "paused": false,
+        "pitch": -2.5974331281662626,
+        "simAbbreviation": "msfs",
+        "simVersion": "11.0.282174.999",
+        "slew": false,
+        "timeAcceleration": 1,
+        "transponder": "7000",
+        "verticalSpeed": 12.795839309692383
+    }
+}
