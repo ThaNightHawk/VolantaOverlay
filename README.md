@@ -1,7 +1,8 @@
 # VolantaOverlay
 I got tired of Volanta's pay2style barrier, with the only thing able to be changed being the colors.  
 
-Ironically enough, right now, the easiest thing to change are the colors. They're defined in `/CSS/main.css` :root-block.  
+Ironically enough, right now, the easiest thing to change are the colors.  
+They're defined in `/CSS/main.css` within the :root-block.  
 Currently it mimics the exact info that Volanta does on their 1st party overlay, except for when you don't have a flightplan, then it'll say that.
 
 > [!NOTE]
